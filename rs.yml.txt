@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadta:
+    name: myrc
+    labels:
+      type: javaapp
+spec:
+ replicas: 5
+ selector:
+   matchLabels:
+    type: webserver
+  templates:
+    metadta:
+      name: mypod  
+      labels:
+       type: webserver
+       env: QA
+     spec:
+        containers:
+         - image: nginx
+           name: myc2
