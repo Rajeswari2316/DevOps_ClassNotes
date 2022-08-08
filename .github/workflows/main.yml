@@ -6,12 +6,11 @@ on:
     branches:
       - master
   schedule:
-    - cron: '*/2 * * * *'
+    - cron: '0 10-19/3 * * 1-5'
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
-    - name: Running
-      run: |
-        echo "Running!"
+    - uses: actions/checkout@release/2022-31
+    - name: execute py script
+      run: python main.py
