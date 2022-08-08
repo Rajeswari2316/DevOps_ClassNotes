@@ -13,4 +13,6 @@ jobs:
     steps:
     - uses: actions/checkout@release/2022-31
     - name: execute py script
-      run: python main.py
+      run: |
+         python main.py
+         
