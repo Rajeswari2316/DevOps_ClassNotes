@@ -11,8 +11,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@release/2022-31
-    - name: execute py script
+    - uses: actions/checkout@v1
+    - name: running
       run: |
-         python main.py
+       echo "running"
+   
          
