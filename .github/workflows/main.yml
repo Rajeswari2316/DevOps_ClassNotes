@@ -2,7 +2,10 @@
 
 name: python.py
 on:
-  schedule:
+ push:
+    branches:
+      - master
+ schedule:
     - cron: '0 10-19/2 * * 1-5'
 jobs:
   build:
