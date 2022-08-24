@@ -14,7 +14,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
     - name: running
       run: |
          python3 python.py
