@@ -2,7 +2,7 @@
 
 name: python.py
 on:
- pull_request_target:
+ push:
    branches:
     - master
  schedule:
